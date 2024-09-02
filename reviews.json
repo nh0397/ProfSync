@@ -1,0 +1,125 @@
+{
+    "reviews": [
+      {
+        "professor": "Dr. John Doe",
+        "subject": "Physics",
+        "stars": 4,
+        "review": "Engaging lectures and clear explanations. Sometimes a bit fast-paced."
+      },
+      {
+        "professor": "Dr. Jane Smith",
+        "subject": "Mathematics",
+        "stars": 5,
+        "review": "Incredibly knowledgeable and helpful during office hours."
+      },
+      {
+        "professor": "Dr. Alan Brown",
+        "subject": "Chemistry",
+        "stars": 3,
+        "review": "Challenging exams but fair grading. Lectures can be dry."
+      },
+      {
+        "professor": "Dr. Emma Davis",
+        "subject": "Biology",
+        "stars": 4,
+        "review": "Interesting course with plenty of hands-on activities."
+      },
+      {
+        "professor": "Dr. Michael Johnson",
+        "subject": "History",
+        "stars": 2,
+        "review": "Lectures are monotonous, but the material is important."
+      },
+      {
+        "professor": "Dr. Linda Wilson",
+        "subject": "English",
+        "stars": 5,
+        "review": "Passionate about literature, makes every class engaging."
+      },
+      {
+        "professor": "Dr. Robert Lee",
+        "subject": "Computer Science",
+        "stars": 4,
+        "review": "Challenging projects, but very rewarding."
+      },
+      {
+        "professor": "Dr. Sarah Kim",
+        "subject": "Psychology",
+        "stars": 3,
+        "review": "Interesting material, but lectures are sometimes disorganized."
+      },
+      {
+        "professor": "Dr. David White",
+        "subject": "Economics",
+        "stars": 4,
+        "review": "Good at breaking down complex concepts, but fast-paced."
+      },
+      {
+        "professor": "Dr. Karen Martinez",
+        "subject": "Sociology",
+        "stars": 5,
+        "review": "Very approachable and makes difficult topics easy to understand."
+      },
+      {
+        "professor": "Dr. James Brown",
+        "subject": "Philosophy",
+        "stars": 2,
+        "review": "Philosophical debates are interesting, but grading is tough."
+      },
+      {
+        "professor": "Dr. Susan Anderson",
+        "subject": "Political Science",
+        "stars": 3,
+        "review": "Knowledgeable but lectures can be repetitive."
+      },
+      {
+        "professor": "Dr. Charles Thomas",
+        "subject": "Art History",
+        "stars": 4,
+        "review": "Provides great insights into the subject, but workload is heavy."
+      },
+      {
+        "professor": "Dr. Patricia Harris",
+        "subject": "Music",
+        "stars": 5,
+        "review": "Very talented and enthusiastic about music theory."
+      },
+      {
+        "professor": "Dr. Barbara Clark",
+        "subject": "Environmental Science",
+        "stars": 4,
+        "review": "Hands-on fieldwork is a highlight of the course."
+      },
+      {
+        "professor": "Dr. Christopher Lewis",
+        "subject": "Anthropology",
+        "stars": 3,
+        "review": "Content is interesting but lectures are too long."
+      },
+      {
+        "professor": "Dr. Mary Robinson",
+        "subject": "Physics",
+        "stars": 4,
+        "review": "Explains difficult concepts well but doesn't provide many examples."
+      },
+      {
+        "professor": "Dr. Richard King",
+        "subject": "Mathematics",
+        "stars": 5,
+        "review": "Excellent at clarifying difficult topics, very patient."
+      },
+      {
+        "professor": "Dr. Jennifer Wright",
+        "subject": "Chemistry",
+        "stars": 4,
+        "review": "Labs are well-organized, and lectures are informative."
+      },
+      {
+        "professor": "Dr. William Scott",
+        "subject": "Biology",
+        "stars": 5,
+        "review": "In-depth knowledge and very supportive during office hours."
+      }
+    ]
+  }
+  
