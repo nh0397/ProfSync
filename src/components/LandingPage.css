@@ -1,0 +1,68 @@
+/* Ensure the landing page takes the full viewport */
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5; /* Light gray background for a clean look */
+    overflow: hidden; /* Ensure no scrollbars */
+  }
+  
+  .content {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  .content.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Title styling with a simple fade-in animation */
+  .title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #333;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Description styling */
+  .description {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #666;
+  }
+  
+  /* Button styling with subtle animations */
+  .auth-buttons .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .auth-buttons .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
+  /* Simple fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,50 @@
+/* Dashboard container */
+.dashboard {
+    background-color: #ffffff;
+    color: #333333;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  /* Header styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .dashboard-title {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  /* Logout button styles */
+  .logout-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Content container for Chatbot */
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  
