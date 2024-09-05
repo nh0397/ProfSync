@@ -24,3 +24,5 @@ yarn-error.log*
 
 rag-professor/*
 .env
+load.ipynb
+requirements.txt
