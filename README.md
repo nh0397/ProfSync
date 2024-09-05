@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# ProfSync
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ProfSync is a web application designed to help students rate and review professors using the power of Large Language Models (LLM) combined with Retrieval-Augmented Generation (RAG). It enables seamless user authentication through Clerk, integrates Gemini API for generating professor insights, and stores vectorized data in Pinecone for efficient retrieval. ProfSync uses various APIs to facilitate these integrations, creating a smart and interactive platform for student reviews.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **User Authentication**: Integrated with [Clerk API](https://clerk.dev/) for secure login and sign-up functionality.
+- **LLM + RAG Integration**: Uses a combination of LLM and Retrieval-Augmented Generation (RAG) to generate professor insights and analysis.
+- **Vectorized Data Storage**: Stores vectorized professor data in [Pinecone](https://www.pinecone.io/) for fast, scalable search and retrieval.
+- **Customizable Prompts**: You can modify the prompts used to generate professor insights by editing the `gemini.js` file.
+- **API-Based Integrations**: ProfSync uses an API-based architecture for all external service integrations.
 
-### `npm start`
+## Screenshots
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Homepage](./src/assets/Homepage.png "Homepage")
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Login/Signup](./src/assets/Login.png "Login/Signup")
 
-### `npm test`
+![Dashboard](./src/assets/Chat.png "Dashboard")
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Professor Insights](./src/assets/Pinecone.png "Professor Insights")
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**: React.js
+- **User Authentication**: Clerk API
+- **LLM and RAG**: Gemini API
+- **Vector Data Storage**: Pinecone
+- **Backend**: https://github.com/nh0397/RateMyProfessorAI-backend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get a local copy up and running, follow these simple steps.
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Make sure you have the following installed:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- [npm](https://www.npmjs.com/get-npm)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Setup
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository:
 
-## Learn More
+   ```bash
+   git clone https://github.com/nh0397/ProfSync
+   cd ProfSync
+   ```
+2. Install dependencies:
+    ```
+    npm install
+    ```
+3. Set up environment variables:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    Create a .env file in the root directory of the project and add the following:
+    ```
+    REACT_APP_GOOGLE_API_KEY=your-google-api-key
+    REACT_APP_PINECONE_API_KEY=your-pinecone-api-key
+    REACT_APP_CLERK_PUBLISHABLE_KEY=your-clerk-publishable-key
+    CLERK_SECRET_KEY=your-clerk-secret-key
+    REACT_APP_PINECONE_INDEX_NAME=rag
+    REACT_APP_PINECONE_ENVIRONMENT=us-east-1
+    REACT_APP_API_URL=your-api-url
+    ```
+- You can get your Clerk publishable key from the [Clerk API dashboard](https://dashboard.clerk.com/apps/).
+- The Firebase API key is required for additional integrations (e.g., user analytics or database usage).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Running the App
+To start the development server, run:
+```
+npm start
+```
+The app will be available at http://localhost:3000.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Backend of the app: https://github.com/nh0397/ProfSync-Backend
 
-### Analyzing the Bundle Size
+### Learn More
+- Clerk API Documentation: https://clerk.dev/docs
+- Pinecone API Documentation: https://docs.pinecone.io/home
+- Gemini API Documentation: https://ai.google.dev/gemini-api/docs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Contributing
+Contributions are welcome! Please follow these steps to contribute:
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Fork the repository.
+- Create your feature branch: git checkout -b feature/YourFeature.
+- Commit your changes: git commit -m 'Add some feature'.
+- Push to the branch: git push origin feature/YourFeature.
+- Open a pull request.
