@@ -26,7 +26,6 @@ ProfSync is a web application designed to help students rate and review professo
 - **User Authentication**: Clerk API
 - **LLM and RAG**: Gemini API
 - **Vector Data Storage**: Pinecone
-- **Backend**: https://github.com/nh0397/RateMyProfessorAI-backend
 
 ## Installation
 
